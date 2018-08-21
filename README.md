@@ -11,6 +11,9 @@ bool isOn = this.GetComponent<JCS_Toggle>().IsOn;
 ## Screenshot ##
 <img src="./screenshot/toggle_demo.gif"/>
 
-## Source ##
-* JCSUnity : https://github.com/jcs090218/JCSUnity
+## 3rd Party Source ##
+* JCSUnity : https://github.com/jcs090218/JCSUnity by <a href="https://github.com/jcs090218">Jen-Chieh Shen</a>
 * Tweener : https://github.com/PeterVuorela/Tweener by <a href="https://github.com/PeterVuorela">Peter Vuorela</a>
+
+## Related Tool ##
+* <a href="https://github.com/Kalxoznik/Unity-Toggle-controller">Unity-Toggle-controller</a> by <a href="https://github.com/Kalxoznik">Max Shakurov</a>
