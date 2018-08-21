@@ -1,0 +1,45 @@
+# ignore the those directory
+/.git
+/.vs
+/Temp
+/Build
+/Library
+/obj
+/Tutorials
+/Publish
+/Assets/Libraries
+
+# don't include the video.
+/Video
+
+# ignore scripts file
+*.bat
+*.sh
+
+# ignore the following extension file
+*.svd
+*.userprefs
+*.csproj
+*.pidb
+*.suo
+*.sln
+*.user
+*.unityproj
+*.booproj
+*.orig
+*.app
+*.exe
+*.*_data
+
+# Unity3D generated meta files
+*.pidb.meta
+
+# Unity3D Generated File On Crash Reports
+sysinfo.txt
+
+# ignore mac attribute file
+*.DS_Store
+
+# Builds
+*.apk
+*.unitypackage
