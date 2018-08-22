@@ -286,6 +286,9 @@ MonoBehaviour:
   mInteractable: 1
   mInteractColor: {r: 1, g: 1, b: 1, a: 1}
   mNotInteractColor: {r: 1, g: 1, b: 1, a: 0.5}
+  mTestWithKey: 1
+  mToggleOnOffKey: 97
+  mToggleInteractable: 115
   mOnOffStartingPosition: 1
   mColorSameAsEditingStatus: 1
   mToggleSign: {fileID: 2116987604}
@@ -464,6 +467,9 @@ MonoBehaviour:
   mInteractable: 1
   mInteractColor: {r: 1, g: 1, b: 1, a: 1}
   mNotInteractColor: {r: 1, g: 1, b: 1, a: 0.5}
+  mTestWithKey: 1
+  mToggleOnOffKey: 97
+  mToggleInteractable: 115
   mOnOffStartingPosition: 1
   mColorSameAsEditingStatus: 1
   mToggleSign: {fileID: 1045779348}
@@ -642,6 +648,9 @@ MonoBehaviour:
   mInteractable: 1
   mInteractColor: {r: 1, g: 1, b: 1, a: 1}
   mNotInteractColor: {r: 1, g: 1, b: 1, a: 0.5}
+  mTestWithKey: 1
+  mToggleOnOffKey: 97
+  mToggleInteractable: 115
   mOnOffStartingPosition: 1
   mColorSameAsEditingStatus: 1
   mToggleSign: {fileID: 137741723}
@@ -820,6 +829,9 @@ MonoBehaviour:
   mInteractable: 1
   mInteractColor: {r: 1, g: 1, b: 1, a: 1}
   mNotInteractColor: {r: 1, g: 1, b: 1, a: 0.5}
+  mTestWithKey: 1
+  mToggleOnOffKey: 97
+  mToggleInteractable: 115
   mOnOffStartingPosition: 1
   mColorSameAsEditingStatus: 1
   mToggleSign: {fileID: 197009828}
@@ -1297,6 +1309,9 @@ MonoBehaviour:
   mInteractable: 1
   mInteractColor: {r: 1, g: 1, b: 1, a: 1}
   mNotInteractColor: {r: 1, g: 1, b: 1, a: 0.5}
+  mTestWithKey: 1
+  mToggleOnOffKey: 97
+  mToggleInteractable: 115
   mOnOffStartingPosition: 1
   mColorSameAsEditingStatus: 1
   mToggleSign: {fileID: 1003267598}
@@ -1922,6 +1937,9 @@ MonoBehaviour:
   mInteractable: 1
   mInteractColor: {r: 1, g: 1, b: 1, a: 1}
   mNotInteractColor: {r: 1, g: 1, b: 1, a: 0.5}
+  mTestWithKey: 1
+  mToggleOnOffKey: 97
+  mToggleInteractable: 115
   mOnOffStartingPosition: 1
   mColorSameAsEditingStatus: 1
   mToggleSign: {fileID: 2135095917}
@@ -2100,6 +2118,9 @@ MonoBehaviour:
   mInteractable: 1
   mInteractColor: {r: 1, g: 1, b: 1, a: 1}
   mNotInteractColor: {r: 1, g: 1, b: 1, a: 0.5}
+  mTestWithKey: 1
+  mToggleOnOffKey: 97
+  mToggleInteractable: 115
   mOnOffStartingPosition: 1
   mColorSameAsEditingStatus: 1
   mToggleSign: {fileID: 310234412}
@@ -2278,6 +2299,9 @@ MonoBehaviour:
   mInteractable: 1
   mInteractColor: {r: 1, g: 1, b: 1, a: 1}
   mNotInteractColor: {r: 1, g: 1, b: 1, a: 0.5}
+  mTestWithKey: 1
+  mToggleOnOffKey: 97
+  mToggleInteractable: 115
   mOnOffStartingPosition: 1
   mColorSameAsEditingStatus: 1
   mToggleSign: {fileID: 829897557}
@@ -2456,6 +2480,9 @@ MonoBehaviour:
   mInteractable: 1
   mInteractColor: {r: 1, g: 1, b: 1, a: 1}
   mNotInteractColor: {r: 1, g: 1, b: 1, a: 0.5}
+  mTestWithKey: 1
+  mToggleOnOffKey: 97
+  mToggleInteractable: 115
   mOnOffStartingPosition: 1
   mColorSameAsEditingStatus: 1
   mToggleSign: {fileID: 1865921045}
@@ -2860,6 +2887,9 @@ MonoBehaviour:
   mInteractable: 1
   mInteractColor: {r: 1, g: 1, b: 1, a: 1}
   mNotInteractColor: {r: 1, g: 1, b: 1, a: 0.5}
+  mTestWithKey: 1
+  mToggleOnOffKey: 97
+  mToggleInteractable: 115
   mOnOffStartingPosition: 1
   mColorSameAsEditingStatus: 1
   mToggleSign: {fileID: 358891085}
@@ -3336,6 +3366,9 @@ MonoBehaviour:
   mInteractable: 1
   mInteractColor: {r: 1, g: 1, b: 1, a: 1}
   mNotInteractColor: {r: 1, g: 1, b: 1, a: 0.5}
+  mTestWithKey: 1
+  mToggleOnOffKey: 97
+  mToggleInteractable: 115
   mOnOffStartingPosition: 1
   mColorSameAsEditingStatus: 1
   mToggleSign: {fileID: 2090987325}
@@ -3738,6 +3771,9 @@ MonoBehaviour:
   mInteractable: 1
   mInteractColor: {r: 1, g: 1, b: 1, a: 1}
   mNotInteractColor: {r: 1, g: 1, b: 1, a: 0.5}
+  mTestWithKey: 1
+  mToggleOnOffKey: 97
+  mToggleInteractable: 115
   mOnOffStartingPosition: 1
   mColorSameAsEditingStatus: 1
   mToggleSign: {fileID: 1105592677}
@@ -4139,6 +4175,9 @@ MonoBehaviour:
   mInteractable: 1
   mInteractColor: {r: 1, g: 1, b: 1, a: 1}
   mNotInteractColor: {r: 1, g: 1, b: 1, a: 0.5}
+  mTestWithKey: 1
+  mToggleOnOffKey: 97
+  mToggleInteractable: 115
   mOnOffStartingPosition: 1
   mColorSameAsEditingStatus: 1
   mToggleSign: {fileID: 728404704}
@@ -4681,6 +4720,9 @@ MonoBehaviour:
   mInteractable: 1
   mInteractColor: {r: 1, g: 1, b: 1, a: 1}
   mNotInteractColor: {r: 1, g: 1, b: 1, a: 0.5}
+  mTestWithKey: 1
+  mToggleOnOffKey: 97
+  mToggleInteractable: 115
   mOnOffStartingPosition: 1
   mColorSameAsEditingStatus: 1
   mToggleSign: {fileID: 1431791547}
@@ -5083,6 +5125,9 @@ MonoBehaviour:
   mInteractable: 1
   mInteractColor: {r: 1, g: 1, b: 1, a: 1}
   mNotInteractColor: {r: 1, g: 1, b: 1, a: 0.5}
+  mTestWithKey: 1
+  mToggleOnOffKey: 97
+  mToggleInteractable: 115
   mOnOffStartingPosition: 1
   mColorSameAsEditingStatus: 1
   mToggleSign: {fileID: 762235730}
@@ -5485,6 +5530,9 @@ MonoBehaviour:
   mInteractable: 1
   mInteractColor: {r: 1, g: 1, b: 1, a: 1}
   mNotInteractColor: {r: 1, g: 1, b: 1, a: 0.5}
+  mTestWithKey: 1
+  mToggleOnOffKey: 97
+  mToggleInteractable: 115
   mOnOffStartingPosition: 1
   mColorSameAsEditingStatus: 1
   mToggleSign: {fileID: 1053485142}
@@ -5663,6 +5711,9 @@ MonoBehaviour:
   mInteractable: 1
   mInteractColor: {r: 1, g: 1, b: 1, a: 1}
   mNotInteractColor: {r: 1, g: 1, b: 1, a: 0.5}
+  mTestWithKey: 1
+  mToggleOnOffKey: 97
+  mToggleInteractable: 115
   mOnOffStartingPosition: 1
   mColorSameAsEditingStatus: 1
   mToggleSign: {fileID: 1100184521}
@@ -5841,6 +5892,9 @@ MonoBehaviour:
   mInteractable: 1
   mInteractColor: {r: 1, g: 1, b: 1, a: 1}
   mNotInteractColor: {r: 1, g: 1, b: 1, a: 0.5}
+  mTestWithKey: 1
+  mToggleOnOffKey: 97
+  mToggleInteractable: 115
   mOnOffStartingPosition: 1
   mColorSameAsEditingStatus: 1
   mToggleSign: {fileID: 1366343807}
