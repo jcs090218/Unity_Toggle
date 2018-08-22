@@ -1,4 +1,4 @@
-# UI Toggle #
+# Unity Toggle #
 
 A little bit overkill toggle button UI for Unity Engine. <br/><br/>
 
