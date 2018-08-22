@@ -31,6 +31,22 @@ namespace JCSUnity
 
         private JCS_ColorTweener mColorTweener = null;
 
+#if (UNITY_EDITOR)
+        [Header("** Helper Variables (JCS_Toggle) **")]
+
+        [Tooltip("Test module with the key?")]
+        [SerializeField]
+        private bool mTestWithKey = false;
+
+        [Tooltip("Key to toggle this toggle component.")]
+        [SerializeField]
+        private KeyCode mToggleOnOffKey = KeyCode.A;
+
+        [Tooltip("Key to toggle interactable.")]
+        [SerializeField]
+        private KeyCode mToggleInteractable = KeyCode.S;
+#endif
+
 
         [Header("** Initialize Variables (JCS_Toggle) **")]
 
@@ -113,6 +129,9 @@ namespace JCSUnity
                 this.mToggleSign = this.GetComponentInChildren<JCS_ToggleSign>();
 
             this.mColorTweener = this.GetComponent<JCS_ColorTweener>();
+
+            // Add interactable callback.
+            this.interactableCallback += InteractableCallback;
         }
 
         private void Start()
@@ -127,8 +146,14 @@ namespace JCSUnity
 #if (UNITY_EDITOR)
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.A))
+            if (!mTestWithKey)
+                return;
+
+            if (Input.GetKeyDown(mToggleOnOffKey))
                 Toggle();
+
+            if (Input.GetKeyDown(mToggleInteractable))
+                Interactable = !Interactable;
         }
 #endif
 
@@ -152,9 +177,15 @@ namespace JCSUnity
         /// <returns>
         /// true, after toggle once is on.
         /// false, after toggle once is off.
+        /// 
+        /// ATTENTION: If toggle is not interactable will 
+        /// return false.
         /// </returns>
         public bool Toggle()
         {
+            if (!Interactable)
+                return false;
+
             // Toggle it.
             mIsOn = !mIsOn;
 
@@ -243,7 +274,7 @@ namespace JCSUnity
         /// </summary>
         /// <param name="vec3"> vector to negative. </param>
         /// <returns> negative vector. </returns>
-        public static Vector3 ToNegative(Vector3 vec3)
+        private static Vector3 ToNegative(Vector3 vec3)
         {
             Vector3 newVec;
             newVec.x = -vec3.x;
@@ -251,6 +282,57 @@ namespace JCSUnity
             newVec.z = -vec3.z;
 
             return newVec;
+        }
+
+        /// <summary>
+        /// After set interactable callback.
+        /// </summary>
+        private void InteractableCallback()
+        {
+            Color targetBackgroundColor = mOnBackgroundColor;
+            Color targetButtonColor = mOnButtonColor;
+
+            if (!mIsOn)
+            {
+                targetBackgroundColor = mOffBackgroundColor;
+                targetButtonColor = mOffButtonColor;
+            }
+
+            if (Interactable)
+            {
+                targetBackgroundColor.a = mInteractColor.a;
+                targetButtonColor.a = mInteractColor.a;
+            }
+            else
+            {
+                // Stop color tweener if between the process of tweener.
+                mToggleSign.ColorTweener.ResetTweener();
+                mColorTweener.ResetTweener();
+
+                targetBackgroundColor.a = mNotInteractColor.a;
+                targetButtonColor.a = mNotInteractColor.a;
+            }
+
+            SetBackgroundColor(targetBackgroundColor);
+            SetButtonColor(targetButtonColor);
+        }
+
+        /// <summary>
+        /// Set the color of the toggle button.
+        /// </summary>
+        /// <param name="col"></param>
+        private void SetButtonColor(Color col)
+        {
+            mToggleSign.ColorTweener.LocalColor = col;
+        }
+
+        /// <summary>
+        /// Set the color of the toggle background.
+        /// </summary>
+        /// <param name="col"></param>
+        private void SetBackgroundColor(Color col)
+        {
+            mColorTweener.LocalColor = col;
         }
     }
 }
