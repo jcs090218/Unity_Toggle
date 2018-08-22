@@ -38,6 +38,8 @@ namespace JCSUnity
         public CallBackFunc btnCallBack = null;
         public CallBackFuncBtn btnCallBackBtn = null;
 
+        public CallBackFunc interactableCallback = null;
+
         /*******************************************/
         /*           Private Variables             */
         /*******************************************/
@@ -225,6 +227,10 @@ namespace JCSUnity
             {
                 mImage.color = mNotInteractColor;
             }
+
+            // interactable callback.
+            if (interactableCallback != null)
+                interactableCallback.Invoke();
         }
         public virtual void SetInteractable(bool act)
         {
