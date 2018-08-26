@@ -15,6 +15,7 @@ namespace JCSUnity
 {
     public delegate void ToggleOnCallback();
     public delegate void ToggleOffCallback();
+    public delegate void OnValueChanged();
 
     /// <summary>
     /// Better version of checkbox/toggle GUI.
@@ -30,6 +31,8 @@ namespace JCSUnity
 
         public ToggleOnCallback toggleOnCallback = null;
         public ToggleOffCallback toggleOffCallback = null;
+
+        public OnValueChanged onValueChanged = null;
 
         /*******************************************/
         /*           Private Variables             */
@@ -111,9 +114,18 @@ namespace JCSUnity
         /*******************************************/
         /*             setter / getter             */
         /*******************************************/
-        public bool IsOn { get { return this.mIsOn; }
-            set {
-                this.mIsOn = value;
+        public bool IsOn
+        {
+            get { return this.mIsOn; }
+            set
+            {
+                if (this.mIsOn != value)
+                {
+                    this.mIsOn = value;
+
+                    if (onValueChanged != null)
+                        onValueChanged.Invoke();
+                }
 
                 // Update toggle once.
                 DoToggle();
@@ -193,10 +205,7 @@ namespace JCSUnity
                 return false;
 
             // Toggle it.
-            mIsOn = !mIsOn;
-
-            // Do the real action.
-            DoToggle();
+            IsOn = !IsOn;
 
             return mIsOn;
         }
