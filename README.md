@@ -6,7 +6,7 @@
 A little bit overkill iOS style toggle button. 
 
 ## Usage ##
-```
+```cs
 JCS_Toggle togBtn = this.GetComponent<JCS_Toggle>();
 
 // Check if the toggle is on or off?
