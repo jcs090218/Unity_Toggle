@@ -14,6 +14,9 @@ bool isOn = togBtn.IsOn;
 
 // Toggle the button.
 togBtn.Toggle();
+
+// Set interactable.
+togBtn.Interactable = !togBtn.Interactable;
 ```
 
 ## Screenshot ##
