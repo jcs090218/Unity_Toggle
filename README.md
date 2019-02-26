@@ -1,19 +1,27 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
 # Unity Toggle #
 
-A little bit overkill toggle button UI for Unity Engine. <br/><br/>
+A little bit overkill iOS style toggle button. 
 
-## API ##
+## Usage ##
 ```
+JCS_Toggle togBtn = this.GetComponent<JCS_Toggle>();
+
 // Check if the toggle is on or off?
-bool isOn = this.GetComponent<JCS_Toggle>().IsOn;
+bool isOn = togBtn.IsOn;
+
+// Toggle the button.
+togBtn.Toggle();
 ```
 
 ## Screenshot ##
 <img src="./screenshot/toggle_demo.gif"/>
 
 ## 3rd Party Source ##
-* JCSUnity : https://github.com/jcs090218/JCSUnity by <a href="https://github.com/jcs090218">Jen-Chieh Shen</a>
-* Tweener : https://github.com/PeterVuorela/Tweener by <a href="https://github.com/PeterVuorela">Peter Vuorela</a>
+* *JCSUnity* : https://github.com/jcs090218/JCSUnity by <a href="https://github.com/jcs090218">Jen-Chieh Shen</a>
+* *Tweener* : https://github.com/PeterVuorela/Tweener by <a href="https://github.com/PeterVuorela">Peter Vuorela</a>
 
 ## Related Tool ##
 * <a href="https://github.com/Kalxoznik/Unity-Toggle-controller">Unity-Toggle-controller</a> by <a href="https://github.com/Kalxoznik">Max Shakurov</a>
