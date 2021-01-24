@@ -1,6 +1,5 @@
 [![Build Status](https://travis-ci.com/jcs090218/Unity_Toggle.svg?branch=master)](https://travis-ci.com/jcs090218/Unity_Toggle)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 # Unity Toggle #
 
