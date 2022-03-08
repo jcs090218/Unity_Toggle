@@ -9,7 +9,7 @@
 
 A little bit overkill iOS style toggle button. 
 
-## Usage
+## 🔨 Usage
 
 ```cs
 JCS_Toggle togBtn = this.GetComponent<JCS_Toggle>();
@@ -24,11 +24,11 @@ togBtn.Toggle();
 togBtn.Interactable = !togBtn.Interactable;
 ```
 
-## 3rd Party Source
+## 📌 Dependencies
 
 * [JCSUnity](https://github.com/jcs090218/JCSUnity) by [Jen-Chieh Shen](https://github.com/jcs090218)
 * [Tweener](https://github.com/PeterVuorela/Tweener) by [Peter Vuorela](https://github.com/PeterVuorela)
 
-## Related Tool
+## 🔗 Related Tool
 
-* <a href="https://github.com/Kalxoznik/Unity-Toggle-controller">Unity-Toggle-controller</a> by <a href="https://github.com/Kalxoznik">Max Shakurov</a>
+* [Unity-Toggle-controller](https://github.com/Kalxoznik/Unity-Toggle-controller) by [Max Shakurov](https://github.com/Kalxoznik)
