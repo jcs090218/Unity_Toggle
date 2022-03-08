@@ -1,12 +1,16 @@
-[![Build Status](https://travis-ci.com/jcs090218/Unity_Toggle.svg?branch=master)](https://travis-ci.com/jcs090218/Unity_Toggle)
-[![Unity Engine](https://img.shields.io/badge/unity-2018.3+-black.svg?style=flat&logo=unity&cacheSeconds=2592000)](https://unity3d.com/get-unity/download/archive)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![Unity Engine](https://img.shields.io/badge/unity-2018.3+-black.svg?style=flat&logo=unity&cacheSeconds=2592000)](https://unity3d.com/get-unity/download/archive)
 
-# Unity Toggle #
+# Unity Toggle
+
+[![Build Status](https://travis-ci.com/jcs090218/Unity_Toggle.svg?branch=master)](https://travis-ci.com/jcs090218/Unity_Toggle)
+
+<img src="./screenshot/toggle_demo.gif"/>
 
 A little bit overkill iOS style toggle button. 
 
-## Usage ##
+## Usage
+
 ```cs
 JCS_Toggle togBtn = this.GetComponent<JCS_Toggle>();
 
@@ -20,12 +24,11 @@ togBtn.Toggle();
 togBtn.Interactable = !togBtn.Interactable;
 ```
 
-## Screenshot ##
-<img src="./screenshot/toggle_demo.gif"/>
+## 3rd Party Source
 
-## 3rd Party Source ##
-* *JCSUnity* : https://github.com/jcs090218/JCSUnity by <a href="https://github.com/jcs090218">Jen-Chieh Shen</a>
-* *Tweener* : https://github.com/PeterVuorela/Tweener by <a href="https://github.com/PeterVuorela">Peter Vuorela</a>
+* [JCSUnity](https://github.com/jcs090218/JCSUnity) by [Jen-Chieh Shen](https://github.com/jcs090218)
+* [Tweener](https://github.com/PeterVuorela/Tweener) by [Peter Vuorela](https://github.com/PeterVuorela)
 
-## Related Tool ##
+## Related Tool
+
 * <a href="https://github.com/Kalxoznik/Unity-Toggle-controller">Unity-Toggle-controller</a> by <a href="https://github.com/Kalxoznik">Max Shakurov</a>
